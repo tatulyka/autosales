@@ -3,7 +3,145 @@ html, body {
     height: 100%;
 }
 
+.container__header {         
+    max-width: 946px;
+    margin: 0px auto;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    max-height: 60px;
+    
+}
 
+.header__logo {
+    width: 114px;
+    height: 28px;
+    font-family: 'Akshar', sans-serif;
+    background: linear-gradient(90deg, #f60 0%, #f60 10%, white 10%);
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;   
+    
+}  
+.header__dot {
+    color:  #f60;
+}
+.header__name {
+    font-weight: 400;
+    margin-left: 15px;
+    margin-right: 15%;
+    
+}
+.header__right {
+    display: flex;
+    align-items: center;
+    width: 33%;
+       
+}
+.header__help, .head2 {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.head3 {
+    font-size: 14px;
+    font-weight: 700;
+
+}
+.header__help {
+    margin-right: 15px;
+    line-height: 1.333;
+    
+}
+.header__phoneIcon {
+    width: 16px;
+    height: 16px;
+    color:  #b2b2b2;
+    flex: 0 0 auto;
+    margin-right: 5px;
+    margin-left: 2%;
+}
+.header__phone {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.333;
+    color: #333;
+    flex: 0 0 auto;
+   
+}
+.grayline {
+    width: 100%;
+    height: 1.5px;
+    background-color: rgb(196, 196, 196);
+    box-shadow: 0 1px 5px rgb(0 0 0 / 25%);
+    margin: 0px auto;
+}
+
+/*-------------- progressheader----------------*/
+.progressheader {
+    width: 100vw;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 25%);   
+    height: 112px;    
+    background-color: #f7f7f7;
+    z-index: 4;        
+}
+.progressheader__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 946px;
+    height: 100%;
+    margin: 0px auto;
+}
+.progressHeader_leftIcon {
+    height: 21px;       
+    width: 27px;
+    display: block;
+    fill: #7abf1d;
+    flex: 0 0 auto;
+    overflow: hidden;
+    
+}
+.progressheader__line {
+    height: 9px;
+    flex: 0 1 750px;
+    background-color: #7abf1d;
+    background: linear-gradient(90deg, #7abf1d 0%, #7abf1d 90%, rgb(220, 217, 217) 90%);
+    border-radius: 4px;
+    margin: 0px 15px;    
+    
+}
+.progressheader__price-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 20px;
+    min-width: 120px;
+}
+
+.price-wrapper__carprice {
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 0%;}
+    
+.price-wrapper__euro {
+    color: #f60;
+    font-size: 24px;
+    font-weight: 600;
+       
+}
+.price-wrapper__comment {
+    color: #b2b2b2;
+    font-size: .7rem;
+}
 /*---------------main--------------*/
 .main {
     background-color: #efefef;
@@ -25,96 +163,70 @@ html, body {
 
 .main-container__basic {
     min-height: 910px;
-    max-width: 830px;  
+    max-width: 530px;  
     display: flex;
     flex-direction: column;
-    margin: 55px;    
-    
+    margin-left: 55px;
 }
-.basic__head {  
+.basic__head {
     margin-top: 50px;
 }
 
 
-.basic__heroestable  {
-    display: grid;
-    gap: 15px;   
-    grid-template-columns: repeat(auto-fit, minmax(180px, 3fr));
-    margin-bottom: 50px;
-} 
-
-.basic__hero {
-    height: 360px;    
+.basic__branditem {
+    height: 60px;    
     border: 0.5px solid black;
-    border-radius: 2px;
-    display: flex;   
-    flex-direction: column; 
-    justify-content: space-between;
-    align-items: flex-start;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
-.persone__image {
-        height: 150px;      
-   }
-.hero__img {
-    height: 100%;
-    width: 100%;
-}
-#nameAlter {
-    width: 50px;
-    max-height: 150px;
-    font-size: 10px;
-}
-#persone__container {
-    width: 100%;
-    max-height: 200px;
-    font-size: 10px;
-}
-
-/*.heroname {
-    width: 100%;
-
-}
-*/
-.rates__label {
-    display: flex;  
-    margin-left: 30px;
-    
-   
-}
-.rates__choise {
-    
-   
-    margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: 20px;
-
-}
-#rates {
-    
-    height: 20px;    
-    border: 0.5px solid black;
-    border-radius: 2px;
-    width: 50px;
-    padding-left: 10px; 
-    font-size: 13px;   
-
-}
-.persone__container {
-    
-    height: 90px;
-    width: 100%;   
-
-}
-
-.heroname {
-    font-size: 15px;
-    color:rgba(46, 13, 36, 0.25)
-}
-
-
-/*.hero__img {
+.branditem__img {
     width: 40px;        
 }
+.basic__brandstable  {
+    display: grid;
+    gap: 15px;   
+    grid-template-columns: repeat(auto-fit, minmax(130px, 3fr));
+} 
+.basic__more, .basic__year, .basic__kilometers, .basic__type {
+    margin: 30px 0px 15px;
+}
+.basic__brands, .basic__years {
+    height: 45px;    
+    border: 0.5px solid black;
+    border-radius: 5px;
+    width: 500px;
+    padding-left: 10px;    
+}
+.basic__mileage {
+    display: flex;
+    justify-content: flex-start;
 
+}
+#min, #middle, #max {
+    margin-right: 20px;
+}
+.basic__km {
+    margin-right: 20px;
+}
+#private, #commercial {
+    width: 40px;
+}
 
+.basic-type {
+    width: 20px;
+}
+.resultSum {
+    height: 35px;    
+    background-color: #f60;
+    border: 0.5px solid #f60;
+    border-radius: 5px;
+    width: 180px;
+    align-self: flex-end;
+    color:#efefef;
+    box-shadow: 0 1px 2px rgb(0 0 0 / 25%);
+    font-weight: bold;
+
+}
