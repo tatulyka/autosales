@@ -60,6 +60,22 @@ html, body {
     height: 100%;
     width: 100%;
 }
+#nameAlter {
+    width: 50px;
+    max-height: 150px;
+    font-size: 10px;
+}
+#persone__container {
+    width: 100%;
+    max-height: 200px;
+    font-size: 10px;
+}
+
+/*.heroname {
+    width: 100%;
+
+}
+*/
 .rates__label {
     display: flex;  
     margin-left: 30px;
